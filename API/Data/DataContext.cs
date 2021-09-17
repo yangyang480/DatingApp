@@ -5,12 +5,11 @@ namespace API.Data
 {
     public class DataContext : DbContext
     {
-        internal DbSet<AppUser> Users;
 
         public DataContext(DbContextOptions options) : base(options)
         {
         }
         
-        public DbSet<AppUser> User { get; set;}
+        public DbSet<AppUser> Users { get; set; }
     }
 }
